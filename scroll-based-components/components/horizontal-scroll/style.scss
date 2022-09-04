@@ -1,0 +1,36 @@
+// component styles
+// must have these names
+.scroll-container {
+    height: 100vh;
+    overflow: auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    .content {
+        height: 100%;
+        display: flex;
+        .page {
+            flex: 1;
+            height: 100%;
+            position: relative;
+            .item {
+                position: absolute;
+                transition: transform linear 70ms;
+            }
+        }
+    }
+}
+
+// custom styles
+#my-scroll {
+    .content {
+        .page {
+            background-color: #141414;
+            .item {
+                background-color: white;
+            }
+        }
+    }
+}
+
+// custom default values for this component
+@import './values';

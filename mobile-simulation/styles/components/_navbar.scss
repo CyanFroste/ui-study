@@ -1,0 +1,69 @@
+nav.bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  /* font-weight: 600; */
+}
+nav.bar .indicators {
+  display: flex;
+  align-items: center;
+}
+nav.bar .network {
+  display: flex;
+}
+
+nav.bar .signal-bars {
+  height: 12px;
+  margin: 0 4px;
+  display: flex;
+  align-items: flex-end;
+}
+nav.bar .signal-bars .signal-bar:not(:last-of-type) {
+  margin-right: 2px;
+}
+
+nav.bar .signal-bars .signal-bar {
+  width: 2px;
+  background-color: white;
+}
+
+nav.bar .signal-bars .bar-1 {
+  height: 20%;
+}
+nav.bar .signal-bars .bar-2 {
+  height: 40%;
+}
+nav.bar .signal-bars .bar-3 {
+  height: 60%;
+  background-color: gray;
+}
+nav.bar .signal-bars .bar-4 {
+  height: 80%;
+  background-color: gray;
+}
+
+nav.bar .battery {
+  display: flex;
+  align-items: center;
+}
+nav.bar .battery .progress {
+  height: 12px;
+  border: 2px solid white;
+  width: 28px;
+  border-radius: 6px;
+  margin-left: 4px;
+  overflow: hidden;
+  margin-right: 4px;
+}
+nav.bar .battery .progress-bar {
+  height: 8px;
+  width: 80%;
+  background-color: gray;
+}

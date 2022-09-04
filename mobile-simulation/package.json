@@ -1,0 +1,10 @@
+{
+  "name": "mobile-ui",
+  "version": "1.0.0",
+  "main": "js/index.js",
+  "scripts": {
+    "ts:watch": "tsc -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

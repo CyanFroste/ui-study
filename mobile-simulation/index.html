@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <title>Home</title>
+    </head>
+    <body>
+        <nav class="bar">
+            <div class="clock">12:42 pm</div>
+            <div class="indicators">
+                <div class="network">
+                    <span>LTE</span>
+                    <div class="signal-bars">
+                        <div class="signal-bar bar-1"></div>
+                        <div class="signal-bar bar-2"></div>
+                        <div class="signal-bar bar-3"></div>
+                        <div class="signal-bar bar-4"></div>
+                        <!-- <div class="signal-bar bar-5"></div> -->
+                    </div>
+                </div>
+                <div class="battery">
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span>80%</span>
+                </div>
+            </div>
+        </nav>
+
+        <section class="wallpaper"></section>
+        <div class="wallpaper-settings">
+            <div class="wallpaper-picker">
+                <label class="homescreen-wallpaper-thumbnail"></label>
+            </div>
+            <button type="button" class="close">close</button>
+        </div>
+
+        <section class="home">
+            <!-- widgets and search -->
+
+            <div class="dock">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </section>
+        <section class="drawer">
+            <div class="search">
+                <div id="search"></div>
+            </div>
+            <div class="apps">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </section>
+        <script type="module" src="js/index.js"></script>
+    </body>
+</html>

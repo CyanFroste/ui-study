@@ -1,0 +1,90 @@
+.scroll-container {
+  height: 100vh;
+  overflow: auto;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.scroll-container .content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.scroll-container .content .page {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  position: relative;
+}
+
+.scroll-container .content .page .item {
+  position: absolute;
+  -webkit-transition: -webkit-transform linear 70ms;
+  transition: -webkit-transform linear 70ms;
+  transition: transform linear 70ms;
+  transition: transform linear 70ms, -webkit-transform linear 70ms;
+}
+
+#my-scroll .content .page {
+  background-color: #141414;
+}
+
+#my-scroll .content .page .item {
+  background-color: white;
+}
+
+#my-scroll .content {
+  width: 200%;
+}
+
+#my-scroll .content .page.one .item:nth-child(1) {
+  width: 30%;
+  aspect-ratio: 3 / 4;
+  top: 10%;
+  left: 10%;
+  background-color: #212121;
+}
+
+#my-scroll .content .page.one .item:nth-child(2) {
+  width: 25%;
+  aspect-ratio: 4 / 3;
+  bottom: 10%;
+  left: 35%;
+  background-color: #424242;
+}
+
+#my-scroll .content .page.one .item:nth-child(3) {
+  width: 30%;
+  aspect-ratio: 4 / 3;
+  top: 15%;
+  right: 2%;
+  background-color: #eee;
+}
+
+#my-scroll .content .page.two .item:nth-child(1) {
+  width: 30%;
+  aspect-ratio: 5 / 3;
+  bottom: 10%;
+  left: 10%;
+  background-color: #424242;
+}
+
+#my-scroll .content .page.two .item:nth-child(2) {
+  width: 20%;
+  aspect-ratio: 4 / 3;
+  top: 10%;
+  left: 25%;
+  background-color: #212121;
+}
+
+#my-scroll .content .page.two .item:nth-child(3) {
+  width: 40%;
+  aspect-ratio: 3 / 2;
+  top: 30%;
+  right: 5%;
+  background-color: #eee;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+.scroll-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    // overflow: auto;
+    scroll-behavior: smooth;
+    section {
+        width: 100%;
+        height: 100%;
+        &:nth-child(1) {
+            background-color: cornflowerblue;
+        }
+        &:nth-child(3) {
+            background-color: chartreuse;
+        }
+    }
+    .sticky-container.stuck {
+        position: fixed;
+        top: 0; // to stick
+    }
+    .sticky-container {
+        display: flex;
+        overflow: hidden;
+        // overflow: auto;
+        scroll-behavior: smooth;
+
+        div {
+            flex: 1;
+        }
+        .sticky-item {
+            background-color: coral;
+            position: sticky;
+            top: 0;
+        }
+        .scroll-item {
+            height: 200%;
+            background-color: crimson;
+            display: flex;
+            align-items: flex-end;
+            .eos {
+                background-color: cornflowerblue;
+                height: 20px;
+            }
+        }
+    }
+}

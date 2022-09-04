@@ -1,0 +1,44 @@
+.wallpaper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -20;
+    // background-image: linear-gradient(#1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wallpaper-settings {
+    display: none;
+    flex-direction: column;
+    // menu's style
+    // modularize menu animations too
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    // menu's style
+    background-color: black;
+    padding: 40px 20px;
+
+    & > *:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    // all the defined wallpapers and their pickers and such
+    .homescreen-wallpaper-thumbnail {
+        display: block;
+        height: 50vh;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+}

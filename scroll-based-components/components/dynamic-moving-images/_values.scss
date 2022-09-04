@@ -1,0 +1,109 @@
+@import '../../common/mixins';
+
+#my-dynamic-moving-images {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+        width: 30%;
+        min-width: 380px;
+        aspect-ratio: 1;
+        z-index: 40;
+        background-color: coral;
+    }
+
+    .item {
+        min-width: 200px;
+    }
+
+    .item:nth-child(1) {
+        top: 14%;
+        left: 16%;
+        width: 15%;
+        aspect-ratio: 7 / 5;
+    }
+    .item:nth-child(2) {
+        top: 7%;
+        left: 45%;
+        width: 15%;
+        aspect-ratio: 8 / 5;
+    }
+    .item:nth-child(3) {
+        top: -5%;
+        right: 5%;
+        width: 15%;
+        aspect-ratio: 7 / 5;
+    }
+    .item:nth-child(4) {
+        top: 45%;
+        left: 5%;
+        width: 15%;
+        aspect-ratio: 8 / 5;
+    }
+    .item:nth-child(5) {
+        top: 40%;
+        right: 5%;
+        width: 15%;
+        aspect-ratio: 7 / 5;
+    }
+    .item:nth-child(6) {
+        top: 70%;
+        left: 40%;
+        width: 15%;
+        aspect-ratio: 7 / 5;
+    }
+    .item:nth-child(7) {
+        top: 70%;
+        right: 15%;
+        width: 15%;
+        aspect-ratio: 8 / 5;
+    }
+    .item:nth-child(8) {
+        bottom: -2%;
+        left: -2%;
+        width: 15%;
+        aspect-ratio: 8 / 5;
+    }
+
+    //
+    .item:nth-child(9) {
+        top: -2%;
+        left: -2%;
+        width: 25%;
+        background-color: #424242;
+        aspect-ratio: 9 / 5;
+
+        min-width: 300px;
+    }
+    .item:nth-child(10) {
+        top: 15%;
+        right: 7%;
+        width: 25%;
+        background-color: #424242;
+        aspect-ratio: 9 / 5;
+
+        min-width: 300px;
+    }
+    .item:nth-child(11) {
+        top: 55%;
+        left: 7%;
+        width: 25%;
+        background-color: #424242;
+        aspect-ratio: 9 / 5;
+
+        min-width: 300px;
+    }
+    .item:nth-child(12) {
+        bottom: -2%;
+        right: -2%;
+        width: 25%;
+        background-color: #424242;
+        aspect-ratio: 9 / 5;
+
+        min-width: 300px;
+    }
+}

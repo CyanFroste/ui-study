@@ -1,0 +1,44 @@
+.drawer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 10px;
+    transition: 200ms ease-in;
+    transform: translateY(calc(100vh - 100px));
+}
+
+.drawer.open {
+    transform: translateY(0);
+    background-color: #000000a4;
+    padding-top: 40px;
+}
+
+.drawer .search {
+    width: 100%;
+    padding: 10px;
+}
+
+#search {
+    height: 36px;
+    background-color: gray;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.drawer .apps {
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-content: center;
+}
+
+.drawer .apps .item {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 40px;
+}
